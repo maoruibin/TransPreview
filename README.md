@@ -123,7 +123,13 @@ vsce publish
 
 关注我的公众号，获取更多开发技巧和工具分享：
 
-![公众号二维码](https://gudong.s3.bitiful.net/asset/gongzhenhao.jpg)
+![公众号二维码](https://gudong.s3.bitiful.net/asset/gongzhonghao.jpg)
+
+## ☕ 打赏
+
+如果这个项目对你有帮助，欢迎请我喝杯咖啡：
+
+![打赏](https://doc.gudong.site/assets/img/alipay-donate.7ec06101.jpg)
 
 ## 🤝 贡献
 
