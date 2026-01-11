@@ -27,26 +27,12 @@ TransPreview 让你可以在 VS Code 中：
 
 ## 📸 功能演示
 
-### 预览功能
-点击编辑区右上角的预览图标，即可在侧边栏查看文件内容：
+![](https://gudong.s3.bitiful.net/weimd/1768126448645_image.png)
 
-```
-┌─────────────────┬─────────────────┐
-│  源代码编辑器    │   TransPreview   │
-│                 │                 │
-│  const hello =  │   const hello =  │
-│    "world";     │     "world";     │
-│                 │                 │
-└─────────────────┴─────────────────┘
-```
-
-### 翻译功能
-点击 "Translate" 按钮，使用 AI 翻译整个文档：
-
-```
-原文: This is a powerful VS Code extension for developers.
-译文: 这是一个为开发者提供的强大 VS Code 扩展。
-```
+### 使用说明
+1. 点击编辑区右上角的 **预览图标** 打开预览面板
+2. 预览面板会在右侧显示文件内容
+3. 点击 **Translate** 按钮进行 AI 翻译
 
 ## 🚀 快速开始
 
