@@ -1,0 +1,124 @@
+{
+  "name": "transpreview",
+  "displayName": "TransPreview - Preview & Translate",
+  "description": "Preview files in VS Code with AI-powered translation. Perfect for reading English documentation and technical articles.",
+  "version": "0.1.0",
+  "publisher": "maoruibin",
+  "author": {
+    "name": "咕咚同学"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maoruibin/TransPreview.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maoruibin/TransPreview/issues"
+  },
+  "homepage": "https://github.com/maoruibin/TransPreview#readme",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "preview",
+    "translation",
+    "translate",
+    "ai",
+    "deepseek",
+    "documentation",
+    "english",
+    "chinese",
+    "reading"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "icon": "icon.png",
+  "contributes": {
+    "commands": [
+      {
+        "command": "TransPreview.openPreview",
+        "title": "Open TransPreview",
+        "icon": "$(mirror)"
+      },
+      {
+        "command": "TransPreview.translateContent",
+        "title": "Translate",
+        "icon": "$(translate)"
+      },
+      {
+        "command": "TransPreview.closePreview",
+        "title": "Close Preview",
+        "icon": "$(close)"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "TransPreview.openPreview",
+          "when": "TransPreview.previewVisible == false",
+          "group": "navigation"
+        },
+        {
+          "command": "TransPreview.translateContent",
+          "when": "TransPreview.previewVisible == true",
+          "group": "navigation"
+        },
+        {
+          "command": "TransPreview.closePreview",
+          "when": "TransPreview.previewVisible == true",
+          "group": "navigation"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "TransPreview",
+      "properties": {
+        "TransPreview.translator": {
+          "type": "string",
+          "enum": ["deepseek", "zhipu", "openai", "qwen"],
+          "enumDescriptions": [
+            "DeepSeek - Fast & affordable Chinese AI (recommended)",
+            "Zhipu AI - GLM-4-flash very fast model",
+            "OpenAI - GPT-4o-mini fast & capable",
+            "Qwen - Alibaba Tongyi Qianwen"
+          ],
+          "default": "deepseek",
+          "description": "Translation service provider"
+        },
+        "TransPreview.apiKey": {
+          "type": "string",
+          "default": "",
+          "description": "API key for translation service"
+        },
+        "TransPreview.autoTranslate": {
+          "type": "boolean",
+          "default": false,
+          "description": "Auto-translate when preview opens"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^20.x",
+    "@types/vscode": "^1.85.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "eslint": "^8.54.0",
+    "typescript": "^5.3.0",
+    "@vscode/vsce": "^2.22.0"
+  }
+}
