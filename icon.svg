@@ -1,0 +1,23 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="128" height="128" rx="24" fill="#007ACC"/>
+
+  <!-- Preview icon (eye) -->
+  <g transform="translate(64, 50)">
+    <!-- Eye shape -->
+    <ellipse cx="0" cy="0" rx="28" ry="14" fill="none" stroke="white" stroke-width="3"/>
+    <circle cx="0" cy="0" r="6" fill="white"/>
+  </g>
+
+  <!-- Translate arrows -->
+  <g transform="translate(64, 85)">
+    <!-- Left arrow (A -> 中文) -->
+    <path d="M-20 0 L-8 0 M-12 -4 L-8 0 L-12 4" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <!-- Right arrow (中文 -> A) -->
+    <path d="M8 0 L20 0 M16 -4 L20 0 L16 4" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <!-- Text: T -->
+  <text x="30" y="110" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">T</text>
+  <text x="88" y="110" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">P</text>
+</svg>
