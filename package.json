@@ -1,8 +1,8 @@
 {
   "name": "transpreview",
-  "displayName": "TransPreview - Preview & Translate",
-  "description": "Preview files in VS Code with AI-powered translation. Perfect for reading English documentation and technical articles.",
-  "version": "0.1.0",
+  "displayName": "TransPreview",
+  "description": "在 VS Code 中预览文件并使用 AI 进行翻译。专为阅读英文文档和技术文章设计。",
+  "version": "0.2.0",
   "publisher": "maoruibin",
   "author": {
     "name": "咕咚同学"
@@ -16,6 +16,7 @@
     "url": "https://github.com/maoruibin/TransPreview/issues"
   },
   "homepage": "https://github.com/maoruibin/TransPreview#readme",
+  "icon": "icon.png",
   "engines": {
     "vscode": "^1.85.0"
   },
